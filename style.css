@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ubuntu;
+    color: #fff;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+*::selection{
+    color: black;
+    background-color: white;
+}
+.main{
+    background-color: #0F0D0D;
+    cursor: none;
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #BB2821;
+    z-index: 8;
+    mix-blend-mode: difference;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+    /* transition: top linear 0.1s left linear 0.1s; */
+}
+.pur{
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    background-color: #BB2821;
+    z-index: 100;
+    opacity: 0;
+    display: none;
+    transition: opacity ease 1s;
+}
+marquee{
+    font-size: 6vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding-top: 6vw;
+}
+.nav{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    /* after */
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 102;
+}
+.lord-icon{
+    height: 70px;
+    width: 70px;
+}
+.navpart2{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.navpart2 h4{
+    font-weight: 500;
+}
+.navpart2 h4:nth-child(1){
+    border-bottom: 2px solid white;
+}
+.navpart3 .circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.page1 h1{
+    font-size: 9vw;
+    font-weight: 300;
+    margin-top: 6vw;
+    margin-left: 6vw;
+}
+.page1 h2{
+    font-size: 9vw;
+    font-weight: 300;
+    margin-left: 26vw
+}
+.page1 video{
+    width: 60%;
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    box-shadow: 8px 7px 20px -10px red;
+    border-radius: 20px;
+    margin-bottom: 2vw;
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    padding: 3vw 2vw;
+    justify-content: space-between;
+}
+.page2 .elem{
+    height: 100vh;
+    width: 31%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+.page2 .elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.1;
+    transform-style: preserve-3d;
+}
+.page3{
+    height: 80vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    padding: 80px;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.cont img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(4deg); 
+}
+.cont img:nth-child(1){
+    left: 2%;
+}
+.cont img:nth-child(3){
+    right: 10%;
+}
+.textdiv{
+    height: 110px;
+    overflow: hidden;
+}
+.textdiv h1{
+    font-size: 6vw;
+    transition: all ease-out 0.5s;
+}
+.cont:hover h1{
+    transform: translateY(-100%);
+    color: red;
+} 
+.cont:hover img{
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+}
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    padding: 0 100px;
+}
+.page4 h2{
+    text-transform: uppercase;
+    font-size: 4vw;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.page4 h3{
+    font-size: 1.4vw;
+}
+.boxcont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    border-top: 1.5px solid white;
+    padding: 0 20px;
+}
+.boxcont:nth-last-child(1){
+    border-bottom: 1.5px solid white;
+}
+footer{
+    height: 15vh;
+    width: 100%;
+}
