@@ -2,7 +2,7 @@
 
 Welcome to the Animated Batman Website! This project is an interactive website featuring Batman, built with cool animations using GSAP (GreenSock Animation Platform), ScrollTrigger, and Locomotive Scroll. Users can explore various sections of the website with smooth scrolling and captivating animations.
 
-### Live @: 
+### Live @: https://mynkrog.github.io/bat-project/ 🔗
 
 ### Features🛠️
 
